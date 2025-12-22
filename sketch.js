@@ -20,6 +20,11 @@ function draw() {
   fill(240,random(100,190),30);//sun color
   stroke(240,random(100,190),30);
   ellipse(mouseX,mouseY,150,150);//sun
+   //moon
+  stroke(22, 77, 2,0); // an RGB color for the circle's border
+  fill(230, 228, 227); // ramdom colors mostly blues and purples + jim(no idea what that means) and opacity depends on mouse y
+  strokeWeight(5)
+  ellipse(mouseY,mouseX,50,50); // color changing circle, moves against mouse
   fill(163, 163, 163);
   stroke(163, 180, 180);
   triangle(450,200,350,450,500,450);//mountain 1
@@ -29,12 +34,6 @@ function draw() {
   rect(0,440,500,60);//ground
   ellipse(150,450,150,100);//hill 1
   ellipse(50,450,150,150);//hill 2
-
-   //moon
-  stroke(22, 77, 2,0); // an RGB color for the circle's border
-  fill(230, 228, 227); // ramdom colors mostly blues and purples + jim(no idea what that means) and opacity depends on mouse y
-  strokeWeight(5)
-  ellipse(mouseY,300,90,90); // color changing circle, moves against mouse
 
   //text
   textFont('Ariel');
